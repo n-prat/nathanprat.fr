@@ -2,6 +2,7 @@
 layout: page
 permalink: /about/index.html
 title: Nathan Prat
+name: about
 lang: en
 tags: [Nathan, Prat, nathanprat]
 imagefeature: fourseasons.jpg

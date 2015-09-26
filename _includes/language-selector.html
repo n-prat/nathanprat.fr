@@ -1,0 +1,8 @@
+    <!--Language selector-->
+{% assign pagess=site.pages | where:"name", page.name | sort: 'lang' %}
+<ul>
+{% for page in pagess %}    
+    <li class="lang">
+        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+    </li>
+{% endfor %}

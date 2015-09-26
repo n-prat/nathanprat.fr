@@ -55,21 +55,28 @@ markdown:    kramdown
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 #permalink:   /:categories/:title
 #permalink: /:title/
-permalink: /:title/
+#permalink: /:title/
 
 defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      lang: en
+      permalink: /:name/
   -
     scope:
       path: _posts/en
     values:
       lang: en
-      permalink: /fr/:name/
+      permalink: /en/:name/
   -
     scope:
       path: _posts/fr
     values:
       lang: fr
-      permalink: /en/:name/
+      permalink: /fr/:name/
 
 kramdown:
   auto_ids: true

@@ -7,16 +7,6 @@ lang: en
 description: "An archive of posts sorted by date."
 ---
 
-<!--Language selector-->
-{% assign pagess=site.pages | where:"name", page.name | sort: 'path' %}
-<ul>
-{% for page in pagess %}    
-    <li class="lang">
-        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-    </li>
-{% endfor %}
-</ul>
-
 <!--Display only featured post of the same language-->
 {% assign featuredcount = '0' %}
 
