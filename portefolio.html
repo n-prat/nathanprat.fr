@@ -9,7 +9,6 @@ description: "An archive of posts sorted by date."
 
 <!--Display only featured post of the same language-->
 {% assign featuredcount = '0' %}
-
 {% assign posts=site.posts | where:"lang", page.lang %}
 <ul>
 {% for post in posts %}
