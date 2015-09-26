@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /fr/about/
+permalink: /a-propos/
 title: Nathan Prat
 lang: fr
 tags: [Nathan, Prat, nathanprat]
