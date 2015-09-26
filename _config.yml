@@ -37,8 +37,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Portefolio
-    url: /portefolio
+  - title: Portfolio
+    url: /portfolio
   - title: Categories
     url: /categories
   - title: About
