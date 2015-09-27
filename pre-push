@@ -21,9 +21,22 @@
 
 remote="$1"
 url="$2"
+dir=$(pwd)
 
-unset GIT_DIR
-cd /home/nathan/Documents/
-/home/nathan/.gem/ruby/2.2.0/bin/s3_website push
+echo -e "\e[34m\e[1mStarting pre-push hook \e[0m"
+
+echo -e "\e[34mBuilding site... \e[0m"
+jekyll build
+echo -e "\e[34mBuilding completed \e[0m"
+
+cd ..
+echo "Now in $(pwd)"
+echo -e "\e[34mUploading to s3... \e[0m"
+s3_website push
+echo -e "\e[34mUpload completed... \e[0m"
+
+cd $dir
+echo "Back in $(pwd)"
+echo -e "\e[34m\e[1mPre-push hook completed \e[0m"
 
 exit 0
