@@ -11,4 +11,4 @@ chart: true
 
 You can contact me using the form below :
 
-{% include formkeep-contact.html %}
+{% include formkeep-contact-en.html %}
