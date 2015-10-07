@@ -39,7 +39,7 @@ bing_verify:
 # For external links add external: true
 links-en:
   - title: Home
-    url: /en/
+    url: /
     external: false
     icon: home
   - title: Portfolio
