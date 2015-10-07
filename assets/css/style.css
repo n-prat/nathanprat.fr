@@ -1068,3 +1068,12 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+  
+  #got-your-email .confirmation {
+  display: none;
+  color: #b11a29;
+}
+
+#got-your-email:target .confirmation {
+  display: inherit;
+}

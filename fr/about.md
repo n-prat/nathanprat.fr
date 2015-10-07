@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /a-propos/
-title: Nathan Prat
+title: A propos de moi
 name: about
 lang: fr
 tags: [Nathan, Prat, nathanprat]
