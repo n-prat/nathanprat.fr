@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /a-propos/
+permalink: /fr/about/
 title: A propos de moi
 name: about
 lang: fr

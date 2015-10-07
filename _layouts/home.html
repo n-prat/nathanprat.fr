@@ -19,13 +19,7 @@
         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
         </li>
-{% for link in site.links %}
-            <li>{% if link.external %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-            {% else %}
-            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-            {% endif %} </li>
-{% endfor %}                       
+        {% include links-generator.html %}
     </ul>
     {% include language-selector.html %}
 </div>

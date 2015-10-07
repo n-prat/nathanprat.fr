@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /contact/
+permalink: /en/contact/
 title: Contact
 name: contact
 lang: en

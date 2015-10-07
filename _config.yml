@@ -37,19 +37,33 @@ bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
-links:
+links-en:
   - title: Home
-    url: /
+    url: /en/
     external: false
     icon: home
   - title: Portfolio
-    url: /portfolio
+    url: /en/portfolio
   - title: Categories
-    url: /categories
+    url: /en/categories
   - title: About
-    url: /about
+    url: /en/about
   - title: Contact
-    url: /contact
+    url: /en/contact
+    
+links-fr:
+  - title: Acceuil
+    url: /fr/
+    external: false
+    icon: home
+  - title: Portfolio
+    url: /fr/portfolio
+  - title: Categories
+    url: /fr/categories
+  - title: A propos
+    url: /fr/about
+  - title: Contact
+    url: /fr/contact
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Paris
@@ -63,27 +77,6 @@ markdown:    kramdown
 #permalink:   /:categories/:title
 #permalink: /:title/
 #permalink: /:title/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      lang: en
-      permalink: /:name/
-  -
-    scope:
-      path: _posts/en
-    values:
-      lang: en
-      permalink: /en/:name/
-  -
-    scope:
-      path: _posts/fr
-    values:
-      lang: fr
-      permalink: /fr/:name/
 
 kramdown:
   auto_ids: true

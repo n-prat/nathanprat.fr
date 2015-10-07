@@ -1,0 +1,16 @@
+
+<!--Links generator-->
+{% if page.lang == "fr"" %}
+    {% assign linkss=site.links-fr %}
+{% else %}
+    {% assign linkss=site.links-en %}
+{% endif %}
+
+<ul>
+{% for link in linkss %}
+            <li>{% if link.external %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {% else %}
+            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+            {% endif %} </li>
+{% endfor %}  

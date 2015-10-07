@@ -1,5 +1,5 @@
     <!--Language selector-->
-{% assign pagess=site.pages | where:"name", page.name | sort: 'lang' %}
+{% assign pagess=site.posts | where:"name", page.name | sort: 'lang' %}
 
 {% for page in pagess %}    
     <li class="lang">

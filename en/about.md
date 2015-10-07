@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about/
+permalink: /en/about/
 title: About me
 name: about
 lang: en
