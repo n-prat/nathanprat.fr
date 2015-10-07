@@ -1,20 +1,35 @@
 ---
+
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>{{ site.url }}</loc>
-    </url>
-    
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        
     {% for page in site.pages %}
     <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        {% assign samepages=site.pages | where:"name", page.name | sort: 'lang' %}
+        <loc>{{ site.myurl }}{{ page.url }}</loc>
+        {% for page in samepages %} 
+        <xhtml:link 
+                 rel="alternate"
+                 hreflang="{{ page.lang }}"
+                 href="{{ page.url }}"
+                 />
+        {% endfor %}
     </url>
     {% endfor %}
-
-    {% for post in site.posts %}
+   
+    {% for page in site.posts %}
     <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% assign samepages=site.posts | where:"name", page.name | sort: 'lang' %}
+        <loc>{{ site.myurl }}{{ page.url }}</loc>
+        {% for page in samepages %} 
+        <xhtml:link 
+                 rel="alternate"
+                 hreflang="{{ page.lang }}"
+                 href="{{ page.url }}"
+                 />
+        {% endfor %}
     </url>
     {% endfor %}
 </urlset>
