@@ -14,7 +14,9 @@ echo -e "\e[34mBuilding completed \e[0m"
 echo -e "\e[34mCopying to \e[0m"
 echo $nginxdir
 echo 
-su -c "rm -rf $nginxdir/* && cp -r _site/* $nginxdir/"
+#su -c "rm -rf $nginxdir/* && cp -r _site/* $nginxdir/"
+rm -r $nginxdir/*
+cp -r _site/* $nginxdir/
 echo -e "\e[34mCopy completed... \e[0m"
 
 echo -e "\e[34m\e[1mDeployment completed \e[0m"
