@@ -3,6 +3,12 @@ gems:
 
 safe: false
 
+exclude:
+  - CNAME
+  - Gemfile
+  - "*deploy*"
+
+
 title:            NP
 description:      "Welcome to my page"
 logo:             logo.png
