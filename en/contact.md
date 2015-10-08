@@ -11,4 +11,4 @@ chart: true
 
 You can contact me using the form below :
 
-{% include poolapp-contact-en.html %}
+{% include pooleapp-contact-en.html %}
