@@ -3,22 +3,23 @@
 <!--Template by Hossain Mohammad Faysal-->
 <head>
 {% include head.html %}
+{% include scripts-head.html %}
 </head>
 <body class="post-template page" itemscope itemtype="//schema.org/WebPage">
 {% include tagmanager.html %}
 <main id="notepad-page-container" class="notepad-page-container" role="main">
-    
-    
+
+
         <header class="notepad-page-header">
             <div class="notepad-page-menu-header">
-                
+
                     <a class="notepad-blog-logo" href="{{ site.url }}">
                         <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo">
                     </a>
-                
-                
-                
-                <div class="notepad-blog-menu">      
+
+
+
+                <div class="notepad-blog-menu">
     <div class="notepad-mobile-menu show-for-small">
         <a href="#"><i class="fa fa-bars"></i></a>
     </div>
@@ -26,7 +27,7 @@
         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
         </li>
-        {% include links-generator.html %}       
+        {% include links-generator.html %}
     </ul>
 
     {% include language-selector.html %}
@@ -47,6 +48,6 @@
         <div class="cf"></div>
     {% include footer.html %}
 </main>
- {% include scripts.html %} 
+ {% include scripts-body.html %}
 </body>
 </html>
