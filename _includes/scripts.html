@@ -10,10 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.js"></script>
     <script>window.NProgress || document.write('<script src="{{ site.url }}/assets/js/vendor/nprogress.js"><\/script>')</script>
 
-    {% if page.imagefeature %}<script src="{{ site.url }}/assets/js/vendor/background-check.js"></script>
-    <script src="{{ site.url }}/assets/js/vendor/post-header-animations.js"></script>{% endif %}
-    <script src="{{ site.url }}/assets/js/notepad.js"></script>
-    <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+    {% if page.imagefeature %}<script async src="{{ site.url }}/assets/js/vendor/background-check.js"></script>
+    <script async src="{{ site.url }}/assets/js/vendor/post-header-animations.js"></script>{% endif %}
+    <script async src="{{ site.url }}/assets/js/notepad.js"></script>
+    <script async src="{{ site.url }}/assets/js/scripts.min.js"></script>
 
     <script>
       $(document).foundation();
