@@ -3,7 +3,7 @@
 remote="$1"
 url="$2"
 dir=$(pwd)
-nginxdir=/usr/share/nginx/html
+nginxdir=/usr/share/nginx/html-test
 
 echo -e "\e[34m\e[1mDeploying \e[0m"
 
