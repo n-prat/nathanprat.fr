@@ -6,6 +6,7 @@ dir=$(pwd)
 nginxdir=/usr/share/nginx/html-test
 
 echo -e "\e[34m\e[1mDeploying \e[0m"
+git pull
 
 echo -e "\e[34mBuilding site... \e[0m"
 jekyll build
