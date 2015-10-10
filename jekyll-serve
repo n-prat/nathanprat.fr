@@ -1,0 +1,16 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+dir=$(pwd)
+nginxdir=/usr/share/nginx/html-test
+
+echo -e "\e[34m\e[1mDeploying... \e[0m"
+
+echo -e "\e[34mCleaning nginx dir \e[0m"
+rm -r $nginxdir/*
+
+echo -e "\e[34mServing with jekyll\e[0m"
+jekyll build --watch --destination $nginxdir/
+
+exit 0
