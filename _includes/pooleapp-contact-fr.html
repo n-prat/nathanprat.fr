@@ -1,12 +1,36 @@
-<section id="got-your-email">  
-  <form action="//pooleapp.com/stash/fd5be8ea-2633-40f8-aba0-f5d13e606889/" method="post">
-    <input type="hidden" name="redirect_to" value="/fr/contact/#got-your-email" />
-    <input type="email" name="email" placeholder="Votre email">
-    <input type="text" name="name" placeholder="Votre nom">
-    <textarea name="textarea" rows="10" cols="50">Sujet</textarea>
-    <input type="submit" value="send" />
-  </form>
-  <p class="confirmation">
-    Merci!
-  </p>
-</section>
+<!-- Redirect to dummy iframe, that will cause the following error on POST but it works so... -->
+<!-- XMLHttpRequest cannot load https://. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://test.nathanprat.fr' is therefore not allowed access.
+Refused to display 'http:///' in a frame because it set 'X-Frame-Options' to 'DENY'. -->
+
+<form id="contact-form" action="https://pooleapp.com/stash/fd5be8ea-2633-40f8-aba0-f5d13e606889/" method="post" target="dummyframe">
+    <!-- <input type="hidden" name="redirect_to" value="/en/contact/" /> -->
+    <div class="field">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required placeholder="Nom Prenom">
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="vous@exemple.fr">
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+    </div>
+
+    <!-- <div class="field">
+        <input type="submit" value="envoyer" />
+    </div> -->
+    <div class="medium-9">
+        <button class="submit" type="submit" value="Submit">Envoyer</button>
+    </div>
+</form>
+
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+
+<div id="thanks" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Merci!</h2>
+  <p class="lead">Je vous repondrai dès que possible.</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
